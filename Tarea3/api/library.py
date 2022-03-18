@@ -27,13 +27,12 @@ class Persona:
         con tags.'''
         return filter in self.cedula or filter in self.tags
 
-class Empleado:
-    def __init__(self):
-        super().__init__()
+class Empleado():
     '''Representa una colección de notas que pueden ser etiquetadas,
     modificadas, y se pueden buscar.'''
 
     def __init__(self):
+        super().__init__()
         '''Inicialiaza lista pleado con una lista vacía.'''
         self.lista = []
 

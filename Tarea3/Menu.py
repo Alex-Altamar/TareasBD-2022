@@ -1,6 +1,8 @@
 import sys
 from api.library import *
 
+
+
 class Menu:
     '''Muestra un menu y responde a elecciones cuando se ejecuta.'''
     def __init__(self):
@@ -52,7 +54,7 @@ Menu Cuaderno
         apellido=input("Ingrese el apellido:  ")
         direccion=input("Ingrese la direccion: ")
         telefono=input("Ingrese el telefono:  ")
-        self.empleado.nuevo_empleado(Persona(cedula, nombre, apellido, telefono, direccion))
+        self.empleado.nuevo_empleado(cedula, nombre, apellido, telefono, direccion, tags='')
 
         print("Tu empleado ha sido añadido.")
 
